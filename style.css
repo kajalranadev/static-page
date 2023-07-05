@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url("building.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: brightness(50%);
+}
+.navbar {
+  display: flex;
+  background-color: yellowgreen;
+
+  flex-direction: row;
+  width: 100%;
+}
+img {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  padding-right: 400px;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0 170%;
+
+  /* margin-top: 30px; */
+  padding: 20px 0;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 23px 34px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+h1 {
+  align-items: center;
+  margin-left: 35%;
+  padding-bottom: 25px;
+  padding-top: 15%;
+  color: #fff;
+  font-weight: 800;
+  font-size: 60px;
+  font-family: "Lora", serif;
+}
+span {
+  font-size: 45px;
+  margin-left: 8%;
+  font-family: "Lora", serif;
+  /* width: 20px; */
+}
+p {
+  width: 50%;
+  margin-left: 30%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+.line {
+  width: 33px;
+  background: white;
+  height: 4px;
+  margin: 5px 3px;
+}
+@media screen and (max-width: 1303px) {
+  .navbar {
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+  }
+  .nav-list {
+    flex-direction: column;
+    /* transition: all 0.3s ease-out; */
+  }
+  .burger {
+    display: block;
+  }
+  .h-nav-resp {
+    height: 72px;
+  }
+  .v-class-resp {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  h1 span {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  section {
+    flex-direction: column-reverse;
+  }
+}
